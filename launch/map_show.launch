@@ -1,0 +1,4 @@
+<launch>
+    <!-- <node pkg="lidar_tool" type="map_show" name="map_show" output="screen"/> -->
+    <node name="rviz_node" pkg="rviz" type="rviz" args="-d $(find lidar_tool)/rviz_config/map_show.rviz" />
+</launch>
