@@ -1,0 +1,7 @@
+<launch>
+    <param name="cloud_path" type="string" value="/home/liu/data/map/indoor_lab_2.pcd" />
+    <param name="save_path" type="string" value="/home/liu/data/map/filtered.pcd" />
+    <param name="grid_size" type="double" value="0.05" />
+
+    <node pkg="lidar_tool" type="cloud_filter" name="cloud_filter" output="screen"/>
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+
+    <rosparam command="load" file="$(find lidar_tool)/config/merge_lidar_KAIST.yaml" />
+    <node pkg="lidar_tool" type="merge_lidar" name="merge_lidar" output="screen" />
+
+    <node name="rviz_node" pkg="rviz" type="rviz" args="-d $(find lidar_tool)/rviz_config/merge_lidar.rviz" />
+</launch>
